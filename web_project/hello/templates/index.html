@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Home Page</title>
+</head>
+<body>
+
+<div id="main">
+    <div class="content">
+        <div class="main-para">
+            <h1 class="title" style="color : white">Hello!</h1> 
+            <p>
+                <h2 class="subtitle" style="color : white">Encryption</h2>    
+                <ul>
+                    <li style="color : white">Enter your text in the first box and click on the Encrypt button.</li>
+                    <li style="color : white">You see the corresponding text obtained using the Atbash cipher
+encryption algorithm, in the below box!</li>
+                </ul>
+            </p>
+        </div>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <textarea id="inp1" name="inp1" rows = "7" cols="100" placeholder="Enter your text">{{ inp1 }}</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-1">
+                    <input type="submit" name="submit_type" value="encrypt">
+                </div>
+                <h2 class="subtitle" style="color : white">Decryption</h2>
+                <ul>
+                    <li style="color : white">Enter your text in the second box and click on the Decrypt button.</li>
+                    <li style="color : white">You see the corresponding text obtained using the Atbash
+cipher decryption algorithm, in the above box!</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <textarea id="inp2" name="inp2" rows = "7" cols="100" placeholder="Enter your text">{{ inp2 }}</textarea>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <input type="submit" name="submit_type" value="decrypt">
+                </div>
+        </form>
+    </div> 
+    <div>
+        <h2 class="particulars" style="color : white">Network Security</h2>
+        <h3 class="particulars" style="color : white">Kunapareddy Pooja Naidu, 18075032, CSE</h3>
+    </div>
+</div>
+</body>
+</html> -->
+
+
